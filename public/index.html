@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check List Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="initial-screen">
+        <div class="initial-content">
+            <h1>Check List Game</h1>
+            <input type="text" id="username" placeholder="Digite seu nome">
+            <button id="start-button">Iniciar</button>
+        </div>
+    </div>
+    <div id="game-screen" class="hidden">
+        <header>
+            <h1>Check List Game</h1>
+            <div id="project-menu">
+                <h2 id="current-project">Novo Projeto</h2>
+                <button id="new-project-button">Novo Projeto</button>
+                <button id="store-button">Loja</button>
+            </div>
+        </header>
+        <main>
+            <div id="task-input-container">
+                <input type="text" id="task-input" placeholder="Adicione uma tarefa">
+                <button id="add-task-button">Adicionar</button>
+            </div>
+            <ul id="task-list"></ul>
+        </main>
+    </div>
+    <div id="store" class="hidden">
+        <div id="store-content">
+            <h2>Escolha um tema</h2>
+            <button class="theme-button" data-theme="theme-black">Tema Preto</button>
+            <button class="theme-button" data-theme="theme-blue">Tema Azul</button>
+            <button class="theme-button" data-theme="theme-city">Cidade</button>
+            <button class="theme-button" data-theme="theme-office">Escritório</button>
+            <button class="theme-button" data-theme="theme-forest">Floresta</button>
+            <button id="close-store">Fechar Loja</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
